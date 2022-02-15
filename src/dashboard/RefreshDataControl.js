@@ -6,7 +6,7 @@ import { Tooltip } from '@patternfly/react-core'
 
 const RefreshDataControl = ({ onRefresh }) => {
   return (
-    <Tooltip content={msg.dashboardRefreshButtonTooltip()} position='bottom' distance={5}>
+    <Tooltip content={msg.dashboardRefreshButtonTooltip()} position='bottom-start' distance={5}>
       <div className='btn-group'>
         <button type='button' className='btn btn-default' onClick={event => {
           event.preventDefault()
