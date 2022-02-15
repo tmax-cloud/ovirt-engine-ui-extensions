@@ -33,7 +33,6 @@ function formatTooltip (tooltipType, total, unit, { date, value }) {
     case 'valuePerDate':
       const { unit: newUnit, value: newUsed } = convertValue(storageUnitTable, unit, value)
       return `      ${formatDateTime(date)}   \n${formatNumber1D(newUsed)} ${newUnit}`
-    }
 
     default:
       return `${formatNumber1D(value)} ${unit}`

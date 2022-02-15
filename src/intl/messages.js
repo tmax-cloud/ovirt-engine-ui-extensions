@@ -277,13 +277,13 @@ const messageDescriptors = {
   dashboardUtilizationCardAmountAvailableTooltip: {
     id: 'dashboard.utilizationCardAmountAvailableTooltip',
     defaultMessage: ' {percent} Available ',
-    description: 'tooltip for amount available on the utilization donut chart',
+    description: 'tooltip for amount available on the utilization donut chart'
   },
 
   dashboardUtilizationCardAmountUsedTooltip: {
     id: 'dashboard.utilizationCardAmountUsedTooltip',
     defaultMessage: ' {percent} Used ',
-    description: 'tooltip for amount used on the utilization donut chart',
+    description: 'tooltip for amount used on the utilization donut chart'
   },
 
   dashboardUtilizationCardOverCommit: {
