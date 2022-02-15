@@ -28,11 +28,12 @@ function formatTooltip (tooltipType, total, unit, { date, value }) {
       return `${labelPercentUsed}`
 
     case 'percentPerDate':
-      return `${formatDateTime(date)}\n${labelPercentUsed}`
+      return `      ${formatDateTime(date)}   \n${labelPercentUsed}`
 
     case 'valuePerDate':
       const { unit: newUnit, value: newUsed } = convertValue(storageUnitTable, unit, value)
-      return `${formatDateTime(date)}\n${formatNumber1D(newUsed)} ${newUnit}`
+      return `      ${formatDateTime(date)}   \n${formatNumber1D(newUsed)} ${newUnit}`
+    }
 
     default:
       return `${formatNumber1D(value)} ${unit}`
