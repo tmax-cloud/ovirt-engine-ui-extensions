@@ -1,10 +1,10 @@
 #!/bin/bash -ex
 
 # Name and version of the package:
-tar_version="${tar_version:=0.0.0}"
+tar_version="${tar_version:=1.2.7}"
 tar_file="${tar_file:=ovirt-engine-ui-extensions-${tar_version}.tar.gz}"
 rpm_version="${rpm_version:=${tar_version}}"
-rpm_snapshot="${rpm_snapshot:=}"
+rpm_snapshot="${rpm_snapshot:=hypervm.22.0.0}"
 rpm_dist="${rpm_dist:=$(rpm --eval '%dist')}"
 
 # Generate the .spec file from the template for the distribution where

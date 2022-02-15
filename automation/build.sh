@@ -15,12 +15,12 @@ mkdir -p exported-artifacts
 version="$(jq -r '.version' package.json)"
 date="$(date --utc +%Y%m%d)"
 commit="$(git log -1 --pretty=format:%h)"
-snapshot=".${date}git${commit}"
+snapshot=""
 
 # Check if the commit is tagged (indicates a release build):
 tag="$(git tag --points-at ${commit} | grep -v jenkins || true)"
 if [ ! -z ${tag} ]; then
-  snapshot=""
+  snapshot=".hypervm.22.0.0"
 fi
 
 # Build the tar file:

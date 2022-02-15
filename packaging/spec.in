@@ -1,10 +1,13 @@
 Name: ovirt-engine-ui-extensions
 Summary: oVirt UI Extensions
 Version: @RPM_VERSION@
-Release: 1@RPM_SNAPSHOT@%{?dist}
+Release: @RPM_SNAPSHOT@.prolinux8
 License: ASL 2.0
-URL: http://www.ovirt.org/
+URL: https://github.com/tmax-cloud/ovirt-engine-ui-extensions
 Source: @TAR_FILE@
+Group: Tmax A&C Co., Ltd.
+Vendor: Tmax A&C Co., Ltd.
+Packager: Tmax A&C Co., Ltd. <https://technet.tmaxsoft.com/>
 
 BuildArch: noarch
 
